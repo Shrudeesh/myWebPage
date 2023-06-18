@@ -1,0 +1,27 @@
+.body{
+    margin: 0%;
+}
+.header{
+width: 100%;
+height: auto;
+}
+.img1{
+    padding-top:19px ;
+    
+}
+.about{
+    margin-bottom: 300px;
+    margin-left: 20px;
+}
+.img2{
+    width: 100px;
+    height: 500px;
+}
+.submit{
+     margin-left: 240px;
+    width: 200px;
+    height:px ;
+    border-radius: 8px;
+    
+
+}
