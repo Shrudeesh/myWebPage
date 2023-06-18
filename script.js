@@ -2,11 +2,14 @@ function validate(){
     let text=document.getElementById("inputEmail4").value
     reg=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
    if(reg.test(text)){
-    document.getElementById("warning").innerHTML="success"
+     document.getElementById("warning").innerHTML="success"
     document.getElementById("warning").style.color="green"
+     return true
 }else{
+   
     document.getElementById("warning").innerHTML="failed"
     document.getElementById("warning").style.color="red"
+     return false
    }
 }
 function validateMob(){
@@ -15,9 +18,11 @@ function validateMob(){
     if(red.test(text)){
     document.getElementById("warning-Mob").innerHTML="success"
     document.getElementById("warning-Mob").style.color="green"
+     return true
 }else{
     document.getElementById("warning-Mob").innerHTML="failed"
     document.getElementById("warning-Mob").style.color="red"
+     return false
    }
 }function validateName(){
     let text=document.getElementById("Name").value
@@ -25,15 +30,22 @@ function validateMob(){
     if(red.test(text)){
     document.getElementById("warning-Name").innerHTML="success"
     document.getElementById("warning-Name").style.color="green"
+     return true
 }else{
     document.getElementById("warning-Name").innerHTML="failed"
     document.getElementById("warning-Name").style.color="red"
+     return false
    }
 }
-const learnRegex=()=>{
-     validate();
-     validateMob();
-     validateName();
+const validateFilled=()=>{
+     validate()
+     validateMob()
+     validateName()
+
+if(  validate() && validateMob() &&  validateName())
+return true
+else
+return false
 
 }
 

@@ -219,16 +219,17 @@
       <section class="bg-light"id="cont">
         <div class="container">
             <h3 class="text-center">Contact me</h3>
-            <form class="row g-3">
+            <form class="row g-3" onclick=" return validateFilled()"
+                action="https://script.google.com/macros/s/AKfycbxJl9OFok-3ppKXhhunTPCCDpG88mFumHr_ifIz-K415jyePUxfv2JG40KdqU7-eic9Dw/exec"method="post">
                 <div class="col-md-6">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email"
+                    <input type="email" class="form-control" name="Email" id="inputEmail4" placeholder="Email"
                         value="" onkeyup="validate()">
                     <p id="warning"></p>
                 </div>
                 <div class="col-md-6">
-                    <label for="Mobile4" class="form-label">Mobile</label>
-                    <input type="tel" class="form-control" id="Mobile4" placeholder="Phone" 
+                    <label for="Mobile4" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" name="Phone" id="Mobile4" placeholder="Phone"
                     onblur="validateMob()">
                      <p id="warning-Mob"></p>
                 </div>
@@ -243,16 +244,13 @@
                     <textarea class="form-control" cols="30 " placeholder="Type your comment here!..."
                         rows="10"></textarea>
                 </div>
-                
+                <div class="from-group text-center">
+
+                    <button type="submit" class="btn btn-primary a" style="width: 100%;"
+                        >Submit</button>
+                </div>
                
              </form>
-             <div class="from-group text-center">
-
-                 <button type="submit" class="btn btn-primary a" style="width: 100%;"
-                     onclick="learnRegex()">Submit</button>
-
-             </div>
-              
         </div>
       </section>
       <!--footer-->
