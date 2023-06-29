@@ -1,6 +1,6 @@
 function validate(){
-    let text=document.getElementById("inputEmail4").value
-    reg=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    let text=document.getElementById ("inputEmail4").value
+    reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
    if(reg.test(text)){
      document.getElementById("warning").innerHTML="success"
     document.getElementById("warning").style.color="green"
